@@ -1,5 +1,5 @@
 const request = require('request');
-const PERNR = '11609365';
+const PERNR = '11609000';
 
 //temp setup
 const pmTemp = [36.2, 36.3, 36.4, 36.5, 36.6, 36.7, 36.8, 36.9];
@@ -21,11 +21,10 @@ exports.handler = function (event, context, callback) {
 	console.log('sending temp for: ' + PERNR);
 	const options = {
 		method: 'POST',
-		url: 'https://temptaking.herokuapp.com/users/register',
-		// url: 'http://ptsv2.com/t/ob8gg-1598076748/post', //testURL
+		url: 'http://ptsv2.com/t/ob8gg-1598076748/post', //testURL
 		headers: {
 			Authorization:
-				'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzG',
+				'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTMasdasd2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzG',
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		form: {
@@ -43,11 +42,10 @@ exports.handler = function (event, context, callback) {
 
 	const options2 = {
 		method: 'POST',
-		url: 'https://temptaking.herokuapp.com/users/register',
-		// url: 'http://ptsv2.com/t/ob8gg-1598076748/post', //testURL
+		url: 'http://ptsv2.com/t/ob8gg-1598076748/post', //testURL
 		headers: {
 			Authorization:
-				'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzG',
+				'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4asdasdiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzG',
 			'Content-Type': 'application/x-www-form-urlencoded',
 		},
 		form: {

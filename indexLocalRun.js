@@ -5,13 +5,11 @@ var qs = require('querystring');
 
 var options = {
 	method: 'POST',
-	hostname: 'temptaking.herokuapp.com',
-	path: '/users/register',
-	// hostname: 'ptsv2.com',//test URL
-	// path: '/t/ob8gg-1598076748/post',//test URL
+	hostname: 'ptsv2.com', //test URL
+	path: '/t/ob8gg-1598076748/post', //test URL
 	headers: {
 		Authorization:
-			'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzGG4',
+			'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VasdasdXD1a1AP1rzGG4',
 		'Content-Type': 'application/x-www-form-urlencoded',
 	},
 	maxRedirects: 20,
@@ -53,7 +51,7 @@ let year = date_ob.getFullYear();
 
 //pm temp data
 var postData = qs.stringify({
-	PERNR: '11609365',
+	PERNR: '11609000',
 	temperature: selectedPmTemp,
 	DateTimePM: year + '-' + month + '-' + datePm + 'T07:' + pmTime + ':20Z',
 	temperaturePM: selectedPmTemp,
@@ -80,7 +78,7 @@ var req2 = https.request(options, function (res) {
 
 //am temp data
 var postData2 = qs.stringify({
-	PERNR: '11609365',
+	PERNR: '11609000',
 	temperature: selectedAmTemp,
 	DateTimeAM: year + '-' + month + '-' + dateAm + 'T23:' + amTime + ':41.000Z',
 	temperatureAM: selectedAmTemp,
