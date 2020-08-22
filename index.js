@@ -7,6 +7,8 @@ var options = {
 	method: 'POST',
 	hostname: 'temptaking.herokuapp.com',
 	path: '/users/register',
+	// hostname: 'ptsv2.com',//test URL
+	// path: '/t/ob8gg-1598076748/post',//test URL
 	headers: {
 		Authorization:
 			'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoxMTYwOTM2NSwiaWF0IjoxNTk2OTkzMTU4LCJleHAiOjE1OTc1OTc5NTh9.nh9-knc59mODdYfq5xt_VmfKBZGbZWXD1a1AP1rzG',
